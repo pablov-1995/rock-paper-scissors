@@ -1,0 +1,121 @@
+body {
+  position: relative;
+  overflow: hidden;
+  background: url('img/notebook.jpg')
+}
+
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  width: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  width: 40%;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* first header */
+h1 {
+  font-family: Cabin Sketch, sans-serif;
+  font-size: 70px;
+  color: #4452f9;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  transform: rotate(1deg);
+}
+
+.play-game {
+  /* To make it transparent: */
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+
+  font-family: Shadows into Light, sans-serif;
+  font-size: 50px;
+  opacity: 80%;
+}
+
+.init {
+  position: absolute;
+  bottom: 13%;
+  left: 40%;
+}
+
+.row {
+  height: 25%;
+  margin: 5%;
+  text-align: center;
+  font-family: Shadows into Light, sans-serif;
+  opacity: 80%;
+}
+
+ul {
+  height: 100%;
+  display: flex;
+}
+
+.weapon {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.weapon img {
+  position: absolute;
+  top: 20px;
+  width: 70px;
+  height: auto;
+}
+
+#mid {
+  color: rgb(224, 26, 26);
+  opacity: 80%;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  height: 10%;
+}
+
+p {
+  font-size: 30px;;
+}
+
+.player:hover {
+  background-color: rgb(153, 146, 122);
+  cursor: pointer;
+}
